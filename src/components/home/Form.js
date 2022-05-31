@@ -12,18 +12,18 @@ resetContent()
   }
   return (
     <div className='section'>
-        <form action=''>
-            <h5 className='grey-text'>
+        <form onSubmit={handleSubmit} className='white'>
+            <h5 className='grey-text text-darken-3'>
                 New Note
             </h5>
            
     <div className="input-field">
       <input id="note_title" type="text" className="validate" {...bindTitle} />
-      <label  for="note_title">Note Title</label>
+      <label htmlFor="note_title">Note Title</label>
   </div>
   <div className='input-field'></div>
   <textarea id="note_content" className="materialize-textarea"{...bindContent}></textarea>
-          <label for="note_content">Note Content</label>
+          <label htmlFor='note_content'>Note Content</label>
         </form>
         <button className='btn-green'>Add</button>
 
